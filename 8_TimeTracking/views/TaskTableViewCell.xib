@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskTableViewCell" id="KGk-i7-Jjw" customClass="TaskTableViewCell" customModule="__TimeTracking" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iPv-R7-vdh">
+                        <rect key="frame" x="0.0" y="0.0" width="30" height="200"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="pDh-jf-lmv"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5j7-Rg-3YA">
+                        <rect key="frame" x="40" y="8" width="144" height="184"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2o-AQ-OLA">
+                                <rect key="frame" x="0.0" y="0.0" width="144" height="43"/>
+                                <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmA-Dr-hNf">
+                                <rect key="frame" x="0.0" y="77.5" width="144" height="54"/>
+                                <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBY-8R-IP8">
+                                <rect key="frame" x="0.0" y="166" width="144" height="18"/>
+                                <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3i-ob-BcI">
+                        <rect key="frame" x="194" y="8" width="3" height="184"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="3" id="Nnl-lm-11I"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IRf-Hy-Ypj">
+                        <rect key="frame" x="207" y="8" width="103" height="184"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0tG-OH-7iZ">
+                                <rect key="frame" x="31" y="0.0" width="41.5" height="61.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BTU-bH-kaV">
+                                <rect key="frame" x="27" y="61.5" width="51" height="61"/>
+                                <connections>
+                                    <action selector="onSwitchChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="XEy-AM-zvH"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wu8-UB-gNF">
+                                <rect key="frame" x="16" y="122.5" width="71" height="61.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="p3i-ob-BcI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="2Nr-4O-Qs8"/>
+                    <constraint firstItem="p3i-ob-BcI" firstAttribute="leading" secondItem="5j7-Rg-3YA" secondAttribute="trailing" constant="10" id="34i-vl-iFx"/>
+                    <constraint firstAttribute="bottom" secondItem="p3i-ob-BcI" secondAttribute="bottom" constant="8" id="AFh-n9-qMh"/>
+                    <constraint firstAttribute="trailing" secondItem="IRf-Hy-Ypj" secondAttribute="trailing" constant="10" id="GQ8-t0-Aqc"/>
+                    <constraint firstItem="IRf-Hy-Ypj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Kaj-yv-HcE"/>
+                    <constraint firstItem="5j7-Rg-3YA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Pe5-GB-lb8"/>
+                    <constraint firstItem="iPv-R7-vdh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VC7-ZB-tIX"/>
+                    <constraint firstItem="IRf-Hy-Ypj" firstAttribute="leading" secondItem="p3i-ob-BcI" secondAttribute="trailing" constant="10" id="Z8D-6W-Dsv"/>
+                    <constraint firstItem="5j7-Rg-3YA" firstAttribute="leading" secondItem="iPv-R7-vdh" secondAttribute="trailing" constant="10" id="b3i-L2-enR"/>
+                    <constraint firstItem="iPv-R7-vdh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="o2T-bJ-RDE"/>
+                    <constraint firstAttribute="bottom" secondItem="iPv-R7-vdh" secondAttribute="bottom" id="rEX-Xx-SMd"/>
+                    <constraint firstAttribute="bottom" secondItem="5j7-Rg-3YA" secondAttribute="bottom" constant="8" id="rhF-PC-kcw"/>
+                    <constraint firstAttribute="bottom" secondItem="IRf-Hy-Ypj" secondAttribute="bottom" constant="8" id="vjR-EZ-H1o"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="5j7-Rg-3YA" firstAttribute="width" secondItem="njF-e1-oar" secondAttribute="width" multiplier="0.45" id="xYh-2a-f07"/>
+            </constraints>
+            <connections>
+                <outlet property="elapsedTimeLabel" destination="wu8-UB-gNF" id="7dH-Dr-wgD"/>
+                <outlet property="taskColorView" destination="iPv-R7-vdh" id="pwo-aV-AFF"/>
+                <outlet property="taskCreatedAtLabel" destination="ZBY-8R-IP8" id="Fsc-lG-74x"/>
+                <outlet property="taskDescriptionLabel" destination="hmA-Dr-hNf" id="sn6-3i-mes"/>
+                <outlet property="tasktitleLabel" destination="g2o-AQ-OLA" id="0ok-W9-6qo"/>
+                <outlet property="timePunchSwitch" destination="BTU-bH-kaV" id="bGm-eJ-jzq"/>
+                <outlet property="totalElapsedTimeLabel" destination="0tG-OH-7iZ" id="HSI-FN-0qd"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="103.79464285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
