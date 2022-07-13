@@ -18,7 +18,6 @@ class SummaryTodayViewController: UIViewController {
          https://quickchart.io/chart?c={type:'pie',data:{labels:['January','February', 'March','April', 'May'], datasets:[ {data:[50,60,70,180,190], backgroundColor: [ 'rgb(255, 99, 132)', 'rgb(255, 159, 64)', 'rgb(255, 205, 86)', 'rgb(75, 192, 192)', 'rgb(54, 162, 235)', ]  }]}}
          
          */
-        loadData()
         
     }
     
@@ -91,7 +90,10 @@ class SummaryTodayViewController: UIViewController {
             todayBackgroundColor.append("  '\(value.first?.task?.color ?? "#FF3784")' ")
             
         }
-        // extra {
+
+
+            
+        
         todayLabels = "  [ \(todayLabels) ]"
         todayDataSets = " [ \(todayDataSets) ] "
         todayBackgroundColor = " [ \(todayBackgroundColor) ] "
@@ -102,11 +104,11 @@ class SummaryTodayViewController: UIViewController {
         let todayURL = todayURLStr.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed).flatMap(URL.init)!
         
         
-        imageView.load(url: todayURL)
-            
-            
-        
-        
+        if todayTimepunches.isEmpty {
+            imageView.image = UIImage(named: "no_record")
+        } else {
+            imageView.load(url: todayURL)
+        }
         
     }
 

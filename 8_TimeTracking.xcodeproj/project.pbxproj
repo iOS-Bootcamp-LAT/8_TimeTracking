@@ -21,6 +21,7 @@
 		5C5DF5FB286DDBF300524196 /* TimePunch+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5DF5F7286DDBF300524196 /* TimePunch+CoreDataProperties.swift */; };
 		5C5DF5FE286DDF1C00524196 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5DF5FD286DDF1C00524196 /* HistoryViewController.swift */; };
 		5CBA53412875C0F2002C4443 /* TimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBA53402875C0F2002C4443 /* TimeHelper.swift */; };
+		5CEB3FB1287DAAC90056471C /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEB3FB0287DAAC90056471C /* NotificationManager.swift */; };
 		5CEECEC3286B39FB009C6B14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEECEC2286B39FB009C6B14 /* AppDelegate.swift */; };
 		5CEECEC5286B39FB009C6B14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEECEC4286B39FB009C6B14 /* SceneDelegate.swift */; };
 		5CEECEC7286B39FB009C6B14 /* TasksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEECEC6286B39FB009C6B14 /* TasksListViewController.swift */; };
@@ -49,6 +50,7 @@
 		5C5DF5F7286DDBF300524196 /* TimePunch+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimePunch+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		5C5DF5FD286DDF1C00524196 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		5CBA53402875C0F2002C4443 /* TimeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeHelper.swift; sourceTree = "<group>"; };
+		5CEB3FB0287DAAC90056471C /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		5CEECEBF286B39FB009C6B14 /* 8_TimeTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 8_TimeTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CEECEC2286B39FB009C6B14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CEECEC4286B39FB009C6B14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				5C44B481286F2A0400142405 /* CoreDataManager.swift */,
+				5CEB3FB0287DAAC90056471C /* NotificationManager.swift */,
 			);
 			path = managers;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				5C5DF5F9286DDBF300524196 /* Task+CoreDataProperties.swift in Sources */,
 				5C5DF5F8286DDBF300524196 /* Task+CoreDataClass.swift in Sources */,
 				5CBA53412875C0F2002C4443 /* TimeHelper.swift in Sources */,
+				5CEB3FB1287DAAC90056471C /* NotificationManager.swift in Sources */,
 				5C44B485286F2C2E00142405 /* TaskDetailViewController.swift in Sources */,
 				5CEECECD286B39FB009C6B14 /* __TimeTracking.xcdatamodeld in Sources */,
 				5C4D58832873221A00A4F0CC /* Extensions.swift in Sources */,

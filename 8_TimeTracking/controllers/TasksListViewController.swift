@@ -23,6 +23,13 @@ class TasksListViewController: UIViewController {
         super.viewDidLoad()
         setupTableView()
         loadData()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadData), name: Notification.Name("TimePunchUpdated"), object: nil)
+    }
+    
+    
+    @objc func reloadData() {
+        loadData() 
     }
     
     
@@ -91,8 +98,7 @@ extension TasksListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         tasks.count
     }
-    
-    
+
     // this delegate is called when the scrollView (i.e your UITableView) will start scrolling
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         self.lastContentOffset = scrollView.contentOffset.y
@@ -100,6 +106,7 @@ extension TasksListViewController: UITableViewDelegate, UITableViewDataSource {
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let allelements = CGFloat( tasks.count + 1)
+        
         let cellHeight = tableView.visibleCells.map({ $0.contentView.frame.height }).reduce(0, +) / CGFloat(tableView.visibleCells.count)
         let contentHeight = cellHeight * allelements
         
@@ -125,6 +132,8 @@ extension TasksListViewController: UITableViewDelegate, UITableViewDataSource {
         vc.createNewTast = false
         vc.delegate = self
         vc.task = tasks[indexPath.row]
+        
+        //present(vc, animated: true, completion: nil)
         show(vc, sender: nil)
     }
     

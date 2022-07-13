@@ -129,16 +129,26 @@ class TaskTableViewCell: UITableViewCell {
             timePunch?.elapsedTime = 0
             
             try? context.save()
-            
+            // Create notification
             createTimeTrackingTimer()
+            
+            if let task = timePunch?.task {
+                NotificationManager.shared.scheduleTimePunchNotificationForTask(task: task, action: .endTimePunch, category: .endTimePunchCategory, timeInterval: 10)
+                
+            }
             
         } else {
             timePunch?.end = Date()
             timePunch?.elapsedTime = Int64(  (timePunch?.end ?? Date())  - (timePunch?.start ?? Date())  )
+            // Delete notification
             
             try? context.save()
             timeKeepingTimer?.invalidate()
             
+            if let task = timePunch?.task {
+                
+                NotificationManager.shared.removeScheduleTimePunchNotification(task: task)
+            }
         }
         
     }
